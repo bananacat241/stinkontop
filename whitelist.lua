@@ -6,8 +6,10 @@ local LocalPlayer = Players.LocalPlayer
 local hwid = tostring(game:GetService("RbxAnalyticsService"):GetClientId())
 local key = getgenv().Key
 
+-- Thay vì https://lttn-repli.replit.dev/validate
+-- Dùng URL này:
 local success, response = pcall(function()
-    return game:HttpGet("https://lttn-repli.replit.dev/validate?key=" .. key .. "&hwid=" .. hwid)
+    return game:HttpGet("https://93d7428c-a9ba-412f-8a4f-23c87620e0b0-00-1n181k8b1oqg.sisko.replit.dev/validate?key=" .. key .. "&hwid=" .. hwid)
 end)
 
 if not success or not response then
